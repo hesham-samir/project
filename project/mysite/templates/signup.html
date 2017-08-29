@@ -1,0 +1,11 @@
+{% block content %}
+  <h2>Sign up</h2>
+  <form method="post">
+    {% csrf_token %}
+   <p> <input tybe="text" name="username" placeholder="email" required="required" /></p>
+   <p> <input tybe="text" name="mobile" placeholder="mobile" required="required" /></p>
+    <p> <input tybe="password" name="password1" placeholder="password" required="required" /></p>
+    <p><input tybe="password" name="password2" placeholder="password" required="required" /></p>
+    <p><button type="submit">Sign up</button>
+  </form>
+{% endblock %}
